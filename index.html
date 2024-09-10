@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esha Deswal - Business Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header, footer {
+            background: #004080;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1, footer p {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #f0e68c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            display: none; /* Hide sections initially */
+        }
+
+        section:first-of-type {
+            display: block; /* Show first section initially */
+        }
+
+        section:target {
+            display: block; /* Show section when linked */
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #004080;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .about-content img {
+            border-radius: 50%;
+            margin-right: 2rem;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content p {
+            max-width: 600px;
+            text-align: justify;
+        }
+
+        .project, .service, .gallery-item, .experience, .skill {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .service img, .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-bar {
+            background: #dcdde1;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+            position: relative;
+            height: 25px;
+            width: 100%;
+            background-color: #e0e0e0;
+            overflow: hidden;
+        }
+
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            width: 70%; /* Adjust width based on skill level */
+            background-color: #004080; /* Adjust color based on skill */
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        /* Daily Tasks Section */
+        #daily-tasks {
+            display: none; /* Hidden by default like other sections */
+        }
+
+        #task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #task-list li {
+            background-color: #e0e0e0;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #task-list li button {
+            background-color: #ff4d4d;
+            border: none;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #task-list li button:hover {
+            background-color: #ff1a1a;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Esha Deswal - Business Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#daily-tasks">Daily Tasks</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="https://via.placeholder.com/150" alt="Your Photo">
+                    <p>Hi, I'm Esha Deswal, a passionate science graduate equipped with strong hard and soft skills. I am actively seeking opportunities in Human Resource Management and Finance to enhance my expertise in these domains.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="internships">
+            <div class="container">
+                <h2>Internships</h2>
+                <div class="internship">
+                    <h3>Centre for Environmental Studies and Disaster Management</h3>
+                    <p>Aug 16, 2022 - Jan 16, 2023</p>
+                    <p>Worked on a Disaster Management Plan for Miranda House, including problem identification, solution suggestions, and infrastructure improvements.</p>
+                </div>
+                <div class="internship">
+                    <h3>DS Kothari Summer Research Internship Programme</h3>
+                    <p>Jun 5, 2023 - Jul 17, 2023</p>
+                    <p>Researched synthesis of metal oxide nanoparticles and nanocomposites using green methods, focusing on eco-friendly nanoparticle synthesis.</p>
+                </div>
+                <div class="internship">
+                    <h3>Human Resource and Finance Intern (Umeed NGO)</h3>
+                    <p>Jun 8, 2024 - Jul 7, 2024</p>
+                    <p>Worked on social projects in Human Resource and Finance for Umeed NGO, managing operations and financial planning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <span style="width: 75%;"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project Title</h3>
+                    <p>Short description of the project.</p>
+                    <button><a href="#projects">Read More</a></button>
+                </div>
+                <div class="project">
+                    <h3>Another Project</h3>
+                    <p>Short description of another project.</p>
+                    <button><a href="#projects">Read More</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <div class="container">
+                <h2>Certificates</h2>
+                <div class="certificate">
+                    <h3>O-level Diploma (Business Professional Programmer)</h3>
+                    <p>National Institute of Electronics and Information Technology (NIELIT), 2023</p>
+                </div>
+                <div class="certificate">
+                    <h3>Course on Computer Concepts (CCC)</h3>
+                    <p>National Institute of
